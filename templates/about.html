@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0077b6;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        p {
+            line-height: 1.6;
+            text-align: center;
+        }
+        .info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .info span {
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <img src="{% static 'images/moon.jpg' %}" alt="Your Photo">
+        <p>
+            Hi! My name is <strong>Mahina</strong>. I am passionate about <strong>coding</strong>.
+            I love learning new things, exploring creative ideas, and making a positive impact wherever I go.
+        </p>
+    </div>
+</body>
+</html>

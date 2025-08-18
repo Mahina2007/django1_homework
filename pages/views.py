@@ -3,8 +3,9 @@ from django.shortcuts import render
 def home_page_view(request):
     return render(request, 'home.html')
 
-def hobbies_page(request):
-    return render(request, 'hobbies.html')
+def about_page(request):
+    return render(request, 'about.html')
 
-def my_teachers_page(request):
-    return render(request, 'teachers.html')
+def my_contacts_page(request):
+    context = {}
+    return render(request, 'contacts.html', context)
